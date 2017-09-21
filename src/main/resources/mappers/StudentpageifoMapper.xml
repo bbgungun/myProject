@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ssm.maven.core.mapper.StudentpageifoMapper" >
+
+    <resultMap id="BaseResultMap" type="com.ssm.maven.core.domain.Studentpageifo" >
+        <id column="p_id" property="pId" jdbcType="INTEGER" />
+        <result column="p_name" property="pName" jdbcType="VARCHAR" />
+        <result column="p_nickname" property="pNickname" jdbcType="VARCHAR" />
+        <result column="p_picture" property="pPicture" jdbcType="BIT" />
+        <result column="p_sex" property="pSex" jdbcType="CHAR" />
+        <result column="p_birthday" property="pBirthday" jdbcType="VARCHAR" />
+        <result column="p_interesting" property="pInteresting" jdbcType="VARCHAR" />
+        <result column="p_tel" property="pTel" jdbcType="VARCHAR" />
+        <result column="p_email" property="pEmail" jdbcType="VARCHAR" />
+        <result column="p_qq" property="pQq" jdbcType="VARCHAR" />
+        <result column="p_weibo" property="pWeibo" jdbcType="VARCHAR" />
+        <result column="p_address" property="pAddress" jdbcType="VARCHAR" />
+        <result column="p_constellation" property="pConstellation" jdbcType="VARCHAR" />
+        <result column="p_idol" property="pIdol" jdbcType="VARCHAR" />
+        <result column="p_luckcolor" property="pLuckcolor" jdbcType="VARCHAR" />
+        <result column="p_wishes" property="pWishes" jdbcType="VARCHAR" />
+    </resultMap>
+	
+    <sql id="Example_Where_Clause" >
+        <where >
+            <foreach collection="oredCriteria" item="criteria" separator="or" >
+                <if test="criteria.valid" >
+                    <trim prefix="(" suffix=")" prefixOverrides="and" >
+                        <foreach collection="criteria.criteria" item="criterion" >
+                            <choose >
+                                <when test="criterion.noValue" >
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue" >
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue" >
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue" >
+                                    and ${criterion.condition}
+                                    <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+
+    <sql id="Update_By_Example_Where_Clause" >
+        <where >
+            <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+                <if test="criteria.valid" >
+                    <trim prefix="(" suffix=")" prefixOverrides="and" >
+                        <foreach collection="criteria.criteria" item="criterion" >
+                            <choose >
+                                <when test="criterion.noValue" >
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue" >
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue" >
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue" >
+                                    and ${criterion.condition}
+                                    <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+
+    <sql id="Base_Column_List" >
+        p_id, p_name, p_nickname, p_picture, p_sex, p_birthday, p_interesting, p_tel, p_email, 
+        p_qq, p_weibo, p_address, p_constellation, p_idol, p_luckcolor, p_wishes
+    </sql>
+
+    <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.ssm.maven.core.domain.StudentpageifoExample" >
+        select
+        <if test="distinct" >
+            distinct
+        </if>
+        <include refid="Base_Column_List" />
+        from studentpageifo
+        <if test="_parameter != null" >
+            <include refid="Example_Where_Clause" />
+        </if>
+        <if test="orderByClause != null" >
+            order by ${orderByClause}
+        </if>
+    </select>
+
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+        select 
+        <include refid="Base_Column_List" />
+        from studentpageifo
+        where p_id = #{pId,jdbcType=INTEGER}
+    </select>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+        delete from studentpageifo
+        where p_id = #{pId,jdbcType=INTEGER}
+    </delete>
+
+    <delete id="deleteByExample" parameterType="com.ssm.maven.core.domain.StudentpageifoExample" >
+        delete from studentpageifo
+        <if test="_parameter != null" >
+            <include refid="Example_Where_Clause" />
+        </if>
+    </delete>
+
+    <insert id="insert" parameterType="com.ssm.maven.core.domain.Studentpageifo" >
+        insert into studentpageifo (p_id, p_name, p_nickname, 
+            p_picture, p_sex, p_birthday, 
+            p_interesting, p_tel, p_email, 
+            p_qq, p_weibo, p_address, 
+            p_constellation, p_idol, p_luckcolor, 
+            p_wishes)
+        values (#{pId,jdbcType=INTEGER}, #{pName,jdbcType=VARCHAR}, #{pNickname,jdbcType=VARCHAR}, 
+            #{pPicture,jdbcType=BIT}, #{pSex,jdbcType=CHAR}, #{pBirthday,jdbcType=VARCHAR}, 
+            #{pInteresting,jdbcType=VARCHAR}, #{pTel,jdbcType=VARCHAR}, #{pEmail,jdbcType=VARCHAR}, 
+            #{pQq,jdbcType=VARCHAR}, #{pWeibo,jdbcType=VARCHAR}, #{pAddress,jdbcType=VARCHAR}, 
+            #{pConstellation,jdbcType=VARCHAR}, #{pIdol,jdbcType=VARCHAR}, #{pLuckcolor,jdbcType=VARCHAR}, 
+            #{pWishes,jdbcType=VARCHAR})
+    </insert>
+
+    <insert id="insertSelective" parameterType="com.ssm.maven.core.domain.Studentpageifo" keyProperty="pId" useGeneratedKeys="true">
+        insert into studentpageifo
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="pId != null" >
+                p_id,
+            </if>
+            <if test="pName != null" >
+                p_name,
+            </if>
+            <if test="pNickname != null" >
+                p_nickname,
+            </if>
+            <if test="pPicture != null" >
+                p_picture,
+            </if>
+            <if test="pSex != null" >
+                p_sex,
+            </if>
+            <if test="pBirthday != null" >
+                p_birthday,
+            </if>
+            <if test="pInteresting != null" >
+                p_interesting,
+            </if>
+            <if test="pTel != null" >
+                p_tel,
+            </if>
+            <if test="pEmail != null" >
+                p_email,
+            </if>
+            <if test="pQq != null" >
+                p_qq,
+            </if>
+            <if test="pWeibo != null" >
+                p_weibo,
+            </if>
+            <if test="pAddress != null" >
+                p_address,
+            </if>
+            <if test="pConstellation != null" >
+                p_constellation,
+            </if>
+            <if test="pIdol != null" >
+                p_idol,
+            </if>
+            <if test="pLuckcolor != null" >
+                p_luckcolor,
+            </if>
+            <if test="pWishes != null" >
+                p_wishes,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="pId != null" >
+                #{pId,jdbcType=INTEGER},
+            </if>
+            <if test="pName != null" >
+                #{pName,jdbcType=VARCHAR},
+            </if>
+            <if test="pNickname != null" >
+                #{pNickname,jdbcType=VARCHAR},
+            </if>
+            <if test="pPicture != null" >
+                #{pPicture,jdbcType=BIT},
+            </if>
+            <if test="pSex != null" >
+                #{pSex,jdbcType=CHAR},
+            </if>
+            <if test="pBirthday != null" >
+                #{pBirthday,jdbcType=VARCHAR},
+            </if>
+            <if test="pInteresting != null" >
+                #{pInteresting,jdbcType=VARCHAR},
+            </if>
+            <if test="pTel != null" >
+                #{pTel,jdbcType=VARCHAR},
+            </if>
+            <if test="pEmail != null" >
+                #{pEmail,jdbcType=VARCHAR},
+            </if>
+            <if test="pQq != null" >
+                #{pQq,jdbcType=VARCHAR},
+            </if>
+            <if test="pWeibo != null" >
+                #{pWeibo,jdbcType=VARCHAR},
+            </if>
+            <if test="pAddress != null" >
+                #{pAddress,jdbcType=VARCHAR},
+            </if>
+            <if test="pConstellation != null" >
+                #{pConstellation,jdbcType=VARCHAR},
+            </if>
+            <if test="pIdol != null" >
+                #{pIdol,jdbcType=VARCHAR},
+            </if>
+            <if test="pLuckcolor != null" >
+                #{pLuckcolor,jdbcType=VARCHAR},
+            </if>
+            <if test="pWishes != null" >
+                #{pWishes,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="countByExample" parameterType="com.ssm.maven.core.domain.StudentpageifoExample" resultType="java.lang.Integer" >
+        select count(*) from studentpageifo
+        <if test="_parameter != null" >
+            <include refid="Example_Where_Clause" />
+        </if>
+    </select>
+
+    <update id="updateByExampleSelective" parameterType="map" >
+        update studentpageifo
+        <set >
+            <if test="record.pId != null" >
+                p_id = #{record.pId,jdbcType=INTEGER},
+            </if>
+            <if test="record.pName != null" >
+                p_name = #{record.pName,jdbcType=VARCHAR},
+            </if>
+            <if test="record.pNickname != null" >
+                p_nickname = #{record.pNickname,jdbcType=VARCHAR},
+            </if>
+            <if test="record.pPicture != null" >
+                p_picture = #{record.pPicture,jdbcType=BIT},
+            </if>
+            <if test="record.pSex != null" >
+                p_sex = #{record.pSex,jdbcType=CHAR},
+            </if>
+            <if test="record.pBirthday != null" >
+                p_birthday = #{record.pBirthday,jdbcType=VARCHAR},
+            </if>
+            <if test="record.pInteresting != null" >
+                p_interesting = #{record.pInteresting,jdbcType=VARCHAR},
+            </if>
+            <if test="record.pTel != null" >
+                p_tel = #{record.pTel,jdbcType=VARCHAR},
+            </if>
+            <if test="record.pEmail != null" >
+                p_email = #{record.pEmail,jdbcType=VARCHAR},
+            </if>
+            <if test="record.pQq != null" >
+                p_qq = #{record.pQq,jdbcType=VARCHAR},
+            </if>
+            <if test="record.pWeibo != null" >
+                p_weibo = #{record.pWeibo,jdbcType=VARCHAR},
+            </if>
+            <if test="record.pAddress != null" >
+                p_address = #{record.pAddress,jdbcType=VARCHAR},
+            </if>
+            <if test="record.pConstellation != null" >
+                p_constellation = #{record.pConstellation,jdbcType=VARCHAR},
+            </if>
+            <if test="record.pIdol != null" >
+                p_idol = #{record.pIdol,jdbcType=VARCHAR},
+            </if>
+            <if test="record.pLuckcolor != null" >
+                p_luckcolor = #{record.pLuckcolor,jdbcType=VARCHAR},
+            </if>
+            <if test="record.pWishes != null" >
+                p_wishes = #{record.pWishes,jdbcType=VARCHAR},
+            </if>
+        </set>
+        <if test="_parameter != null" >
+            <include refid="Update_By_Example_Where_Clause" />
+        </if>
+    </update>
+
+    <update id="updateByExample" parameterType="map" >
+        update studentpageifo
+        set p_id = #{record.pId,jdbcType=INTEGER},
+            p_name = #{record.pName,jdbcType=VARCHAR},
+            p_nickname = #{record.pNickname,jdbcType=VARCHAR},
+            p_picture = #{record.pPicture,jdbcType=BIT},
+            p_sex = #{record.pSex,jdbcType=CHAR},
+            p_birthday = #{record.pBirthday,jdbcType=VARCHAR},
+            p_interesting = #{record.pInteresting,jdbcType=VARCHAR},
+            p_tel = #{record.pTel,jdbcType=VARCHAR},
+            p_email = #{record.pEmail,jdbcType=VARCHAR},
+            p_qq = #{record.pQq,jdbcType=VARCHAR},
+            p_weibo = #{record.pWeibo,jdbcType=VARCHAR},
+            p_address = #{record.pAddress,jdbcType=VARCHAR},
+            p_constellation = #{record.pConstellation,jdbcType=VARCHAR},
+            p_idol = #{record.pIdol,jdbcType=VARCHAR},
+            p_luckcolor = #{record.pLuckcolor,jdbcType=VARCHAR},
+            p_wishes = #{record.pWishes,jdbcType=VARCHAR}
+        <if test="_parameter != null" >
+            <include refid="Update_By_Example_Where_Clause" />
+        </if>
+    </update>
+
+    <update id="updateByPrimaryKeySelective" parameterType="com.ssm.maven.core.domain.Studentpageifo" >
+        update studentpageifo
+        <set >
+            <if test="pName != null" >
+                p_name = #{pName,jdbcType=VARCHAR},
+            </if>
+            <if test="pNickname != null" >
+                p_nickname = #{pNickname,jdbcType=VARCHAR},
+            </if>
+            <if test="pPicture != null" >
+                p_picture = #{pPicture,jdbcType=BIT},
+            </if>
+            <if test="pSex != null" >
+                p_sex = #{pSex,jdbcType=CHAR},
+            </if>
+            <if test="pBirthday != null" >
+                p_birthday = #{pBirthday,jdbcType=VARCHAR},
+            </if>
+            <if test="pInteresting != null" >
+                p_interesting = #{pInteresting,jdbcType=VARCHAR},
+            </if>
+            <if test="pTel != null" >
+                p_tel = #{pTel,jdbcType=VARCHAR},
+            </if>
+            <if test="pEmail != null" >
+                p_email = #{pEmail,jdbcType=VARCHAR},
+            </if>
+            <if test="pQq != null" >
+                p_qq = #{pQq,jdbcType=VARCHAR},
+            </if>
+            <if test="pWeibo != null" >
+                p_weibo = #{pWeibo,jdbcType=VARCHAR},
+            </if>
+            <if test="pAddress != null" >
+                p_address = #{pAddress,jdbcType=VARCHAR},
+            </if>
+            <if test="pConstellation != null" >
+                p_constellation = #{pConstellation,jdbcType=VARCHAR},
+            </if>
+            <if test="pIdol != null" >
+                p_idol = #{pIdol,jdbcType=VARCHAR},
+            </if>
+            <if test="pLuckcolor != null" >
+                p_luckcolor = #{pLuckcolor,jdbcType=VARCHAR},
+            </if>
+            <if test="pWishes != null" >
+                p_wishes = #{pWishes,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where p_id = #{pId,jdbcType=INTEGER}
+    </update>
+
+    <update id="updateByPrimaryKey" parameterType="com.ssm.maven.core.domain.Studentpageifo" >
+        update studentpageifo
+        set p_name = #{pName,jdbcType=VARCHAR},
+            p_nickname = #{pNickname,jdbcType=VARCHAR},
+            p_picture = #{pPicture,jdbcType=BIT},
+            p_sex = #{pSex,jdbcType=CHAR},
+            p_birthday = #{pBirthday,jdbcType=VARCHAR},
+            p_interesting = #{pInteresting,jdbcType=VARCHAR},
+            p_tel = #{pTel,jdbcType=VARCHAR},
+            p_email = #{pEmail,jdbcType=VARCHAR},
+            p_qq = #{pQq,jdbcType=VARCHAR},
+            p_weibo = #{pWeibo,jdbcType=VARCHAR},
+            p_address = #{pAddress,jdbcType=VARCHAR},
+            p_constellation = #{pConstellation,jdbcType=VARCHAR},
+            p_idol = #{pIdol,jdbcType=VARCHAR},
+            p_luckcolor = #{pLuckcolor,jdbcType=VARCHAR},
+            p_wishes = #{pWishes,jdbcType=VARCHAR}
+        where p_id = #{pId,jdbcType=INTEGER}
+    </update>
+     <insert id="linkAS" >
+    	insert into page_aluminbook (sp_id,ab_id)
+    		values(#{pId,jdbcType=INTEGER},#{abId,jdbcType=INTEGER})
+    </insert> 
+    <select id="selectPidByabId" resultType="java.lang.Integer" parameterType="java.lang.Integer">
+    	select sp_id from page_aluminbook 
+    		where ab_id=#{abId,jdbcType=INTEGER}
+    </select>
+</mapper>

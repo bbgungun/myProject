@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ssm.maven.core.mapper.AlumniBookifoMapper" >
+
+    <resultMap id="BaseResultMap" type="com.ssm.maven.core.domain.AlumniBookifo" >
+        <id column="ab_id" property="abId" jdbcType="INTEGER" />
+        <result column="ab_name" property="abName" jdbcType="VARCHAR" />
+        <result column="grade_id" property="gradeId" jdbcType="INTEGER" />
+        <result column="class_id" property="classId" jdbcType="INTEGER" />
+        <result column="ab_description" property="abDescription" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <sql id="Example_Where_Clause" >
+        <where >
+            <foreach collection="oredCriteria" item="criteria" separator="or" >
+                <if test="criteria.valid" >
+                    <trim prefix="(" suffix=")" prefixOverrides="and" >
+                        <foreach collection="criteria.criteria" item="criterion" >
+                            <choose >
+                                <when test="criterion.noValue" >
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue" >
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue" >
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue" >
+                                    and ${criterion.condition}
+                                    <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+
+    <sql id="Update_By_Example_Where_Clause" >
+        <where >
+            <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+                <if test="criteria.valid" >
+                    <trim prefix="(" suffix=")" prefixOverrides="and" >
+                        <foreach collection="criteria.criteria" item="criterion" >
+                            <choose >
+                                <when test="criterion.noValue" >
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue" >
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue" >
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue" >
+                                    and ${criterion.condition}
+                                    <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+
+    <sql id="Base_Column_List" >
+        ab_id, ab_name, grade_id, class_id, ab_description
+    </sql>
+
+    <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.ssm.maven.core.domain.AlumniBookifoExample" >
+        select
+        <if test="distinct" >
+            distinct
+        </if>
+        <include refid="Base_Column_List" />
+        from alumni_bookifo
+        <if test="_parameter != null" >
+            <include refid="Example_Where_Clause" />
+        </if>
+        <if test="orderByClause != null" >
+            order by ${orderByClause}
+        </if>
+    </select>
+
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+        select 
+        <include refid="Base_Column_List" />
+        from alumni_bookifo
+        where ab_id = #{abId,jdbcType=INTEGER}
+    </select>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+        delete from alumni_bookifo
+        where ab_id = #{abId,jdbcType=INTEGER}
+    </delete>
+
+    <delete id="deleteByExample" parameterType="com.ssm.maven.core.domain.AlumniBookifoExample" >
+        delete from alumni_bookifo
+        <if test="_parameter != null" >
+            <include refid="Example_Where_Clause" />
+        </if>
+    </delete>
+
+    <insert id="insert" parameterType="com.ssm.maven.core.domain.AlumniBookifo" keyProperty="abId" useGeneratedKeys="true">
+        insert into alumni_bookifo (ab_id, ab_name, grade_id, 
+            class_id, ab_description)
+        values (#{abId,jdbcType=INTEGER}, #{abName,jdbcType=VARCHAR}, #{gradeId,jdbcType=INTEGER}, 
+            #{classId,jdbcType=INTEGER}, #{abDescription,jdbcType=VARCHAR})
+    </insert>
+
+    <insert id="insertSelective" parameterType="com.ssm.maven.core.domain.AlumniBookifo" keyProperty="abId" useGeneratedKeys="true">
+        insert into alumni_bookifo
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="abId != null" >
+                ab_id,
+            </if>
+            <if test="abName != null" >
+                ab_name,
+            </if>
+            <if test="gradeId != null" >
+                grade_id,
+            </if>
+            <if test="classId != null" >
+                class_id,
+            </if>
+            <if test="abDescription != null" >
+                ab_description,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="abId != null" >
+                #{abId,jdbcType=INTEGER},
+            </if>
+            <if test="abName != null" >
+                #{abName,jdbcType=VARCHAR},
+            </if>
+            <if test="gradeId != null" >
+                #{gradeId,jdbcType=INTEGER},
+            </if>
+            <if test="classId != null" >
+                #{classId,jdbcType=INTEGER},
+            </if>
+            <if test="abDescription != null" >
+                #{abDescription,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="countByExample" parameterType="com.ssm.maven.core.domain.AlumniBookifoExample" resultType="java.lang.Integer" >
+        select count(*) from alumni_bookifo
+        <if test="_parameter != null" >
+            <include refid="Example_Where_Clause" />
+        </if>
+    </select>
+
+    <update id="updateByExampleSelective" parameterType="map" >
+        update alumni_bookifo
+        <set >
+            <if test="record.abId != null" >
+                ab_id = #{record.abId,jdbcType=INTEGER},
+            </if>
+            <if test="record.abName != null" >
+                ab_name = #{record.abName,jdbcType=VARCHAR},
+            </if>
+            <if test="record.gradeId != null" >
+                grade_id = #{record.gradeId,jdbcType=INTEGER},
+            </if>
+            <if test="record.classId != null" >
+                class_id = #{record.classId,jdbcType=INTEGER},
+            </if>
+            <if test="record.abDescription != null" >
+                ab_description = #{record.abDescription,jdbcType=VARCHAR},
+            </if>
+        </set>
+        <if test="_parameter != null" >
+            <include refid="Update_By_Example_Where_Clause" />
+        </if>
+    </update>
+
+    <update id="updateByExample" parameterType="map" >
+        update alumni_bookifo
+        set ab_id = #{record.abId,jdbcType=INTEGER},
+            ab_name = #{record.abName,jdbcType=VARCHAR},
+            grade_id = #{record.gradeId,jdbcType=INTEGER},
+            class_id = #{record.classId,jdbcType=INTEGER},
+            ab_description = #{record.abDescription,jdbcType=VARCHAR}
+        <if test="_parameter != null" >
+            <include refid="Update_By_Example_Where_Clause" />
+        </if>
+    </update>
+
+    <update id="updateByPrimaryKeySelective" parameterType="com.ssm.maven.core.domain.AlumniBookifo" >
+        update alumni_bookifo
+        <set >
+            <if test="abName != null" >
+                ab_name = #{abName,jdbcType=VARCHAR},
+            </if>
+            <if test="gradeId != null" >
+                grade_id = #{gradeId,jdbcType=INTEGER},
+            </if>
+            <if test="classId != null" >
+                class_id = #{classId,jdbcType=INTEGER},
+            </if>
+            <if test="abDescription != null" >
+                ab_description = #{abDescription,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where ab_id = #{abId,jdbcType=INTEGER}
+    </update>
+
+    <update id="updateByPrimaryKey" parameterType="com.ssm.maven.core.domain.AlumniBookifo" >
+        update alumni_bookifo
+        set ab_name = #{abName,jdbcType=VARCHAR},
+            grade_id = #{gradeId,jdbcType=INTEGER},
+            class_id = #{classId,jdbcType=INTEGER},
+            ab_description = #{abDescription,jdbcType=VARCHAR}
+        where ab_id = #{abId,jdbcType=INTEGER}
+    </update>
+    <insert id="linkUA" >
+    	insert into user_aluminbook (ab_id,user_id)
+    		values(#{abId,jdbcType=INTEGER},#{userId,jdbcType=INTEGER})
+    </insert> 
+    <insert id="linkAM">
+    	insert into models_aluminbook(ab_id,models_id)
+    		values(#{abId,jdbcType=INTEGER},#{modelsId,jdbcType=INTEGER})
+    </insert>
+    <select id="selectByUserId" resultType="java.lang.Integer">
+    	select ab_id from user_aluminbook where user_id= #{userId,jdbcType=INTEGER}
+    </select>
+</mapper>

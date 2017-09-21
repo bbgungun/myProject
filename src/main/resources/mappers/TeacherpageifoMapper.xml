@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ssm.maven.core.mapper.TeacherpageifoMapper" >
+
+    <resultMap id="BaseResultMap" type="com.ssm.maven.core.domain.Teacherpageifo" >
+        <id column="teacherPageIfo_id" property="teacherpageifoId" jdbcType="INTEGER" />
+        <result column="t_name" property="tName" jdbcType="VARCHAR" />
+        <result column="t_sex" property="tSex" jdbcType="CHAR" />
+        <result column="t_birth" property="tBirth" jdbcType="VARCHAR" />
+        <result column="t_email" property="tEmail" jdbcType="VARCHAR" />
+        <result column="t_qq" property="tQq" jdbcType="VARCHAR" />
+        <result column="t_tel" property="tTel" jdbcType="VARCHAR" />
+        <result column="address" property="address" jdbcType="VARCHAR" />
+        <result column="course_id" property="courseId" jdbcType="INTEGER" />
+        <result column="c_id" property="cId" jdbcType="INTEGER" />
+    </resultMap>
+
+    <sql id="Example_Where_Clause" >
+        <where >
+            <foreach collection="oredCriteria" item="criteria" separator="or" >
+                <if test="criteria.valid" >
+                    <trim prefix="(" suffix=")" prefixOverrides="and" >
+                        <foreach collection="criteria.criteria" item="criterion" >
+                            <choose >
+                                <when test="criterion.noValue" >
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue" >
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue" >
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue" >
+                                    and ${criterion.condition}
+                                    <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+
+    <sql id="Update_By_Example_Where_Clause" >
+        <where >
+            <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+                <if test="criteria.valid" >
+                    <trim prefix="(" suffix=")" prefixOverrides="and" >
+                        <foreach collection="criteria.criteria" item="criterion" >
+                            <choose >
+                                <when test="criterion.noValue" >
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue" >
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue" >
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue" >
+                                    and ${criterion.condition}
+                                    <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+
+    <sql id="Base_Column_List" >
+        teacherPageIfo_id, t_name, t_sex, t_birth, t_email, t_qq, t_tel, address, course_id, 
+        c_id
+    </sql>
+
+    <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.ssm.maven.core.domain.TeacherpageifoExample" >
+        select
+        <if test="distinct" >
+            distinct
+        </if>
+        <include refid="Base_Column_List" />
+        from teacherpageifo
+        <if test="_parameter != null" >
+            <include refid="Example_Where_Clause" />
+        </if>
+        <if test="orderByClause != null" >
+            order by ${orderByClause}
+        </if>
+    </select>
+
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+        select 
+        <include refid="Base_Column_List" />
+        from teacherpageifo
+        where teacherPageIfo_id = #{teacherpageifoId,jdbcType=INTEGER}
+    </select>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+        delete from teacherpageifo
+        where teacherPageIfo_id = #{teacherpageifoId,jdbcType=INTEGER}
+    </delete>
+
+    <delete id="deleteByExample" parameterType="com.ssm.maven.core.domain.TeacherpageifoExample" >
+        delete from teacherpageifo
+        <if test="_parameter != null" >
+            <include refid="Example_Where_Clause" />
+        </if>
+    </delete>
+
+    <insert id="insert" parameterType="com.ssm.maven.core.domain.Teacherpageifo" keyProperty="pId" useGeneratedKeys="true">
+        insert into teacherpageifo (teacherPageIfo_id, t_name, t_sex, 
+            t_birth, t_email, t_qq, 
+            t_tel, address, course_id, 
+            c_id)
+        values (#{teacherpageifoId,jdbcType=INTEGER}, #{tName,jdbcType=VARCHAR}, #{tSex,jdbcType=CHAR}, 
+            #{tBirth,jdbcType=VARCHAR}, #{tEmail,jdbcType=VARCHAR}, #{tQq,jdbcType=VARCHAR}, 
+            #{tTel,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{courseId,jdbcType=INTEGER}, 
+            #{cId,jdbcType=INTEGER})
+    </insert>
+
+    <insert id="insertSelective" parameterType="com.ssm.maven.core.domain.Teacherpageifo" keyProperty="teacherpageifoId" useGeneratedKeys="true" >
+        insert into teacherpageifo
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="teacherpageifoId != null" >
+                teacherPageIfo_id,
+            </if>
+            <if test="tName != null" >
+                t_name,
+            </if>
+            <if test="tSex != null" >
+                t_sex,
+            </if>
+            <if test="tBirth != null" >
+                t_birth,
+            </if>
+            <if test="tEmail != null" >
+                t_email,
+            </if>
+            <if test="tQq != null" >
+                t_qq,
+            </if>
+            <if test="tTel != null" >
+                t_tel,
+            </if>
+            <if test="address != null" >
+                address,
+            </if>
+            <if test="courseId != null" >
+                course_id,
+            </if>
+            <if test="cId != null" >
+                c_id,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="teacherpageifoId != null" >
+                #{teacherpageifoId,jdbcType=INTEGER},
+            </if>
+            <if test="tName != null" >
+                #{tName,jdbcType=VARCHAR},
+            </if>
+            <if test="tSex != null" >
+                #{tSex,jdbcType=CHAR},
+            </if>
+            <if test="tBirth != null" >
+                #{tBirth,jdbcType=VARCHAR},
+            </if>
+            <if test="tEmail != null" >
+                #{tEmail,jdbcType=VARCHAR},
+            </if>
+            <if test="tQq != null" >
+                #{tQq,jdbcType=VARCHAR},
+            </if>
+            <if test="tTel != null" >
+                #{tTel,jdbcType=VARCHAR},
+            </if>
+            <if test="address != null" >
+                #{address,jdbcType=VARCHAR},
+            </if>
+            <if test="courseId != null" >
+                #{courseId,jdbcType=INTEGER},
+            </if>
+            <if test="cId != null" >
+                #{cId,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="countByExample" parameterType="com.ssm.maven.core.domain.TeacherpageifoExample" resultType="java.lang.Integer" >
+        select count(*) from teacherpageifo
+        <if test="_parameter != null" >
+            <include refid="Example_Where_Clause" />
+        </if>
+    </select>
+
+    <update id="updateByExampleSelective" parameterType="map" >
+        update teacherpageifo
+        <set >
+            <if test="record.teacherpageifoId != null" >
+                teacherPageIfo_id = #{record.teacherpageifoId,jdbcType=INTEGER},
+            </if>
+            <if test="record.tName != null" >
+                t_name = #{record.tName,jdbcType=VARCHAR},
+            </if>
+            <if test="record.tSex != null" >
+                t_sex = #{record.tSex,jdbcType=CHAR},
+            </if>
+            <if test="record.tBirth != null" >
+                t_birth = #{record.tBirth,jdbcType=VARCHAR},
+            </if>
+            <if test="record.tEmail != null" >
+                t_email = #{record.tEmail,jdbcType=VARCHAR},
+            </if>
+            <if test="record.tQq != null" >
+                t_qq = #{record.tQq,jdbcType=VARCHAR},
+            </if>
+            <if test="record.tTel != null" >
+                t_tel = #{record.tTel,jdbcType=VARCHAR},
+            </if>
+            <if test="record.address != null" >
+                address = #{record.address,jdbcType=VARCHAR},
+            </if>
+            <if test="record.courseId != null" >
+                course_id = #{record.courseId,jdbcType=INTEGER},
+            </if>
+            <if test="record.cId != null" >
+                c_id = #{record.cId,jdbcType=INTEGER},
+            </if>
+        </set>
+        <if test="_parameter != null" >
+            <include refid="Update_By_Example_Where_Clause" />
+        </if>
+    </update>
+
+    <update id="updateByExample" parameterType="map" >
+        update teacherpageifo
+        set teacherPageIfo_id = #{record.teacherpageifoId,jdbcType=INTEGER},
+            t_name = #{record.tName,jdbcType=VARCHAR},
+            t_sex = #{record.tSex,jdbcType=CHAR},
+            t_birth = #{record.tBirth,jdbcType=VARCHAR},
+            t_email = #{record.tEmail,jdbcType=VARCHAR},
+            t_qq = #{record.tQq,jdbcType=VARCHAR},
+            t_tel = #{record.tTel,jdbcType=VARCHAR},
+            address = #{record.address,jdbcType=VARCHAR},
+            course_id = #{record.courseId,jdbcType=INTEGER},
+            c_id = #{record.cId,jdbcType=INTEGER}
+        <if test="_parameter != null" >
+            <include refid="Update_By_Example_Where_Clause" />
+        </if>
+    </update>
+
+    <update id="updateByPrimaryKeySelective" parameterType="com.ssm.maven.core.domain.Teacherpageifo" >
+        update teacherpageifo
+        <set >
+            <if test="tName != null" >
+                t_name = #{tName,jdbcType=VARCHAR},
+            </if>
+            <if test="tSex != null" >
+                t_sex = #{tSex,jdbcType=CHAR},
+            </if>
+            <if test="tBirth != null" >
+                t_birth = #{tBirth,jdbcType=VARCHAR},
+            </if>
+            <if test="tEmail != null" >
+                t_email = #{tEmail,jdbcType=VARCHAR},
+            </if>
+            <if test="tQq != null" >
+                t_qq = #{tQq,jdbcType=VARCHAR},
+            </if>
+            <if test="tTel != null" >
+                t_tel = #{tTel,jdbcType=VARCHAR},
+            </if>
+            <if test="address != null" >
+                address = #{address,jdbcType=VARCHAR},
+            </if>
+            <if test="courseId != null" >
+                course_id = #{courseId,jdbcType=INTEGER},
+            </if>
+            <if test="cId != null" >
+                c_id = #{cId,jdbcType=INTEGER},
+            </if>
+        </set>
+        where teacherPageIfo_id = #{teacherpageifoId,jdbcType=INTEGER}
+    </update>
+
+    <update id="updateByPrimaryKey" parameterType="com.ssm.maven.core.domain.Teacherpageifo" >
+        update teacherpageifo
+        set t_name = #{tName,jdbcType=VARCHAR},
+            t_sex = #{tSex,jdbcType=CHAR},
+            t_birth = #{tBirth,jdbcType=VARCHAR},
+            t_email = #{tEmail,jdbcType=VARCHAR},
+            t_qq = #{tQq,jdbcType=VARCHAR},
+            t_tel = #{tTel,jdbcType=VARCHAR},
+            address = #{address,jdbcType=VARCHAR},
+            course_id = #{courseId,jdbcType=INTEGER},
+            c_id = #{cId,jdbcType=INTEGER}
+        where teacherPageIfo_id = #{teacherpageifoId,jdbcType=INTEGER}
+    </update>
+    
+    <insert id="linkAT" >
+    	insert into page_aluminbook (tp_id,ab_id)
+    		values(#{pId,jdbcType=INTEGER},#{abId,jdbcType=INTEGER})
+    </insert> 
+ 
+    <select id="selectPidByabId" resultType="java.lang.Integer" parameterType="java.lang.Integer">
+    	select tp_id from page_aluminbook 
+    		where ab_id=#{abId,jdbcType=INTEGER}
+    </select>
+</mapper>

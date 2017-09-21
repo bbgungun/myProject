@@ -1,0 +1,402 @@
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+DEBUG main org.springframework.context.support.GenericApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@2d35d761]
+DEBUG main org.springframework.context.support.GenericApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@17fbf047]
+INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@49d5e6da: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,alumniBookServiceImp,modelsServiceImp,studentpageifoServiceImp,teacherpageifoServiceImp,userIfoServiceImp,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,ServicePointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,alumniBookifoMapper,modelsMapper,studentpageifoMapper,teacherpageifoMapper,userifoMapper]; root of factory hierarchy
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'alumniBookServiceImp'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'alumniBookServiceImp'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'ServicePointcut'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'ServicePointcut'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [com.ssm.maven.core.service.imp.AlumniBookServiceImp]: AutowiredFieldElement for private com.ssm.maven.core.mapper.AlumniBookifoMapper com.ssm.maven.core.service.imp.AlumniBookServiceImp.abm
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [com.ssm.maven.core.service.imp.AlumniBookServiceImp]: AutowiredFieldElement for private com.ssm.maven.core.mapper.ModelsMapper com.ssm.maven.core.service.imp.AlumniBookServiceImp.mm
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'alumniBookServiceImp' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'alumniBookServiceImp': AutowiredFieldElement for private com.ssm.maven.core.mapper.AlumniBookifoMapper com.ssm.maven.core.service.imp.AlumniBookServiceImp.abm
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'alumniBookifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'alumniBookifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'alumniBookifoMapper' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sqlSessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'sqlSessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'sqlSessionFactory' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+INFO main org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'dataSource'
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [F:\Workspace（myeclipse2014）\project\target\classes\mappers]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [F:\Workspace（myeclipse2014）\project\target\classes\mappers] for files matching pattern [F:/Workspace（myeclipse2014）/project/target/classes/mappers/*.xml]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath:mappers/*.xml] to resources [file [F:\Workspace（myeclipse2014）\project\target\classes\mappers\AlumniBookifoMapper.xml], file [F:\Workspace（myeclipse2014）\project\target\classes\mappers\ModelsMapper.xml], file [F:\Workspace（myeclipse2014）\project\target\classes\mappers\StudentpageifoMapper.xml], file [F:\Workspace（myeclipse2014）\project\target\classes\mappers\TeacherpageifoMapper.xml], file [F:\Workspace（myeclipse2014）\project\target\classes\mappers\UserifoMapper.xml]]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'sqlSessionFactory'
+DEBUG main org.apache.ibatis.io.ResolverUtil - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.ResolverUtil - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.ResolverUtil - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.ResolverUtil - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.ResolverUtil - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: AlumniBookifo.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: AlumniBookifoExample.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: AlumniBookifoExample$Criteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: AlumniBookifoExample$Criterion.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: AlumniBookifoExample$GeneratedCriteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: Models.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ModelsExample.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ModelsExample$Criteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ModelsExample$Criterion.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ModelsExample$GeneratedCriteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: Studentpageifo.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: StudentpageifoExample.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: StudentpageifoExample$Criteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: StudentpageifoExample$Criterion.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: StudentpageifoExample$GeneratedCriteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: Teacherpageifo.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: TeacherpageifoExample.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: TeacherpageifoExample$Criteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: TeacherpageifoExample$Criterion.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: TeacherpageifoExample$GeneratedCriteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: Userifo.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: UserifoExample.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: UserifoExample$Criteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: UserifoExample$Criterion.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: UserifoExample$GeneratedCriteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Listing file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/AlumniBookifo.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/AlumniBookifo.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 =  'com/ssm/maven/core/domain/AlumniBookifo  java/lang/Object abId Ljava/lang/Integer; abName Ljava/lang/String; gradeId classId 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/AlumniBookifoExample.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/AlumniBookifoExample.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 N  .com/ssm/maven/core/domain/AlumniBookifoExample  java/lang/Object 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/AlumniBookifoExample$Criteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/AlumniBookifoExample$Criteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 �  7com/ssm/maven/core/domain/AlumniBookifoExample$Criteria  @com/ssm/maven/core/domain/AlumniBookifoExample$GeneratedCriteria <init> ()V Code
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/AlumniBookifoExample$Criterion.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/AlumniBookifoExample$Criterion.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 H  8com/ssm/maven/core/domain/AlumniBookifoExample$Criterion  java/lang/Object 	condition Ljava/lang/String; value Ljava/lang/Object; secondValue noValue Z singleValue betweenValue 	listValue typeHandler getCondition ()Ljava/lang/String; Code	     LineNumberTable LocalVariableTable this :Lcom/ssm/maven/core/domain/AlumniBookifoExample$Criterion; getValue ()Ljava/lang/Object;	     getSecondValue	   	  	isNoValue ()Z	  # 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/AlumniBookifoExample$GeneratedCriteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/AlumniBookifoExample$GeneratedCriteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3:  @com/ssm/maven/core/domain/AlumniBookifoExample$GeneratedCriteria  java/lang/Object criteria Ljava/util/List; 	Signature LLjava/util/List<Lcom/ssm/maven/core/domain/AlumniBookifoExample$Criterion;>; <init> ()V Code
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/Models.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/Models.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 ?   com/ssm/maven/core/domain/Models  java/lang/Object modelsId Ljava/lang/Integer; 	indexpage Ljava/lang/String; teacherpage studentpage tailpage pictrue descrip <init> ()V Code
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/ModelsExample.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/ModelsExample.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 N  'com/ssm/maven/core/domain/ModelsExample  java/lang/Object 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/ModelsExample$Criteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/ModelsExample$Criteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3I  0com/ssm/maven/core/domain/ModelsExample$Criteria  9com/ssm/maven/core/domain/ModelsExample$GeneratedCriteria <init> ()V Code
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/ModelsExample$Criterion.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/ModelsExample$Criterion.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 H  1com/ssm/maven/core/domain/ModelsExample$Criterion  java/lang/Object 	condition Ljava/lang/String; value Ljava/lang/Object; secondValue noValue Z singleValue betweenValue 	listValue typeHandler getCondition ()Ljava/lang/String; Code	     LineNumberTable LocalVariableTable this 3Lcom/ssm/maven/core/domain/ModelsExample$Criterion; getValue ()Ljava/lang/Object;	     getSecondValue	   	  	isNoValue ()Z	  # 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/ModelsExample$GeneratedCriteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/ModelsExample$GeneratedCriteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3�  9com/ssm/maven/core/domain/ModelsExample$GeneratedCriteria  java/lang/Object criteria Ljava/util/List; 	Signature ELjava/util/List<Lcom/ssm/maven/core/domain/ModelsExample$Criterion;>; <init> ()V Code
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/Studentpageifo.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/Studentpageifo.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 o  (com/ssm/maven/core/domain/Studentpageifo  java/lang/Object pId Ljava/lang/Integer; pName Ljava/lang/String; 	pNickname pPicture Ljava/lang/Boolean; pSex 	pBirthday pInteresting pTel pEmail pQq pWeibo pAddress pConstellation pIdol 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/StudentpageifoExample.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/StudentpageifoExample.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 N  /com/ssm/maven/core/domain/StudentpageifoExample  java/lang/Object 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/StudentpageifoExample$Criteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/StudentpageifoExample$Criteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3�  8com/ssm/maven/core/domain/StudentpageifoExample$Criteria  Acom/ssm/maven/core/domain/StudentpageifoExample$GeneratedCriteria <init> ()V Code
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/StudentpageifoExample$Criterion.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/StudentpageifoExample$Criterion.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 H  9com/ssm/maven/core/domain/StudentpageifoExample$Criterion  java/lang/Object 	condition Ljava/lang/String; value Ljava/lang/Object; secondValue noValue Z singleValue betweenValue 	listValue typeHandler getCondition ()Ljava/lang/String; Code	     LineNumberTable LocalVariableTable this ;Lcom/ssm/maven/core/domain/StudentpageifoExample$Criterion; getValue ()Ljava/lang/Object;	     getSecondValue	   	  	isNoValue ()Z	  # 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/StudentpageifoExample$GeneratedCriteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/StudentpageifoExample$GeneratedCriteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3)  Acom/ssm/maven/core/domain/StudentpageifoExample$GeneratedCriteria  java/lang/Object criteria Ljava/util/List; 	Signature MLjava/util/List<Lcom/ssm/maven/core/domain/StudentpageifoExample$Criterion;>; <init> ()V Code
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/Teacherpageifo.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/Teacherpageifo.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 Q  (com/ssm/maven/core/domain/Teacherpageifo  java/lang/Object teacherpageifoId Ljava/lang/Integer; tName Ljava/lang/String; tSex tBirth Ljava/util/Date; tEmail tQq tTel address courseId cId <init> ()V Code
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/TeacherpageifoExample.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/TeacherpageifoExample.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 N  /com/ssm/maven/core/domain/TeacherpageifoExample  java/lang/Object 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/TeacherpageifoExample$Criteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/TeacherpageifoExample$Criteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3�  8com/ssm/maven/core/domain/TeacherpageifoExample$Criteria  Acom/ssm/maven/core/domain/TeacherpageifoExample$GeneratedCriteria <init> ()V Code
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/TeacherpageifoExample$Criterion.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/TeacherpageifoExample$Criterion.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 H  9com/ssm/maven/core/domain/TeacherpageifoExample$Criterion  java/lang/Object 	condition Ljava/lang/String; value Ljava/lang/Object; secondValue noValue Z singleValue betweenValue 	listValue typeHandler getCondition ()Ljava/lang/String; Code	     LineNumberTable LocalVariableTable this ;Lcom/ssm/maven/core/domain/TeacherpageifoExample$Criterion; getValue ()Ljava/lang/Object;	     getSecondValue	   	  	isNoValue ()Z	  # 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/TeacherpageifoExample$GeneratedCriteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/TeacherpageifoExample$GeneratedCriteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3A  Acom/ssm/maven/core/domain/TeacherpageifoExample$GeneratedCriteria  java/lang/Object criteria Ljava/util/List; 	Signature MLjava/util/List<Lcom/ssm/maven/core/domain/TeacherpageifoExample$Criterion;>; <init> ()V Code
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/Userifo.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/Userifo.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 �  !com/ssm/maven/core/domain/Userifo  java/lang/Object userId Ljava/lang/Integer; userAccount Ljava/lang/String; userName userPassword userRealname userSex 	userBirth Ljava/util/Date; 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/UserifoExample.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/UserifoExample.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 N  (com/ssm/maven/core/domain/UserifoExample  java/lang/Object 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/UserifoExample$Criteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/UserifoExample$Criteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3A  1com/ssm/maven/core/domain/UserifoExample$Criteria  :com/ssm/maven/core/domain/UserifoExample$GeneratedCriteria <init> ()V Code
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/UserifoExample$Criterion.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/UserifoExample$Criterion.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 H  2com/ssm/maven/core/domain/UserifoExample$Criterion  java/lang/Object 	condition Ljava/lang/String; value Ljava/lang/Object; secondValue noValue Z singleValue betweenValue 	listValue typeHandler getCondition ()Ljava/lang/String; Code	     LineNumberTable LocalVariableTable this 4Lcom/ssm/maven/core/domain/UserifoExample$Criterion; getValue ()Ljava/lang/Object;	     getSecondValue	   	  	isNoValue ()Z	  # 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/UserifoExample$GeneratedCriteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/F:/Workspace%ef%bc%88myeclipse2014%ef%bc%89/project/target/classes/com/ssm/maven/core/domain/UserifoExample$GeneratedCriteria.class
+DEBUG main org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3�  :com/ssm/maven/core/domain/UserifoExample$GeneratedCriteria  java/lang/Object criteria Ljava/util/List; 	Signature FLjava/util/List<Lcom/ssm/maven/core/domain/UserifoExample$Criterion;>; <init> ()V Code
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.AlumniBookifo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.AlumniBookifoExample matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.AlumniBookifoExample$Criteria matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.AlumniBookifoExample$Criterion matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.AlumniBookifoExample$GeneratedCriteria matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.Models matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.ModelsExample matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.ModelsExample$Criteria matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.ModelsExample$Criterion matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.ModelsExample$GeneratedCriteria matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.Studentpageifo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.StudentpageifoExample matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.StudentpageifoExample$Criteria matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.StudentpageifoExample$Criterion matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.StudentpageifoExample$GeneratedCriteria matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.Teacherpageifo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.TeacherpageifoExample matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.TeacherpageifoExample$Criteria matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.TeacherpageifoExample$Criterion matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.TeacherpageifoExample$GeneratedCriteria matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.Userifo matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.UserifoExample matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.UserifoExample$Criteria matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.UserifoExample$Criterion matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.ssm.maven.core.domain.UserifoExample$GeneratedCriteria matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+DEBUG main org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\Workspace（myeclipse2014）\project\target\classes\mappers\AlumniBookifoMapper.xml]'
+DEBUG main org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\Workspace（myeclipse2014）\project\target\classes\mappers\ModelsMapper.xml]'
+DEBUG main org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\Workspace（myeclipse2014）\project\target\classes\mappers\StudentpageifoMapper.xml]'
+DEBUG main org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\Workspace（myeclipse2014）\project\target\classes\mappers\TeacherpageifoMapper.xml]'
+DEBUG main org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\Workspace（myeclipse2014）\project\target\classes\mappers\UserifoMapper.xml]'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'sqlSessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'alumniBookifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'alumniBookifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'modelsMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'modelsMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'modelsMapper' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sqlSessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'modelsMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'modelsMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'studentpageifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'studentpageifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'studentpageifoMapper' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sqlSessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'studentpageifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'studentpageifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'teacherpageifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'teacherpageifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'teacherpageifoMapper' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sqlSessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'teacherpageifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'teacherpageifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'userifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'userifoMapper' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sqlSessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'userifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'userifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'alumniBookifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'alumniBookServiceImp' to bean named 'alumniBookifoMapper'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'alumniBookServiceImp': AutowiredFieldElement for private com.ssm.maven.core.mapper.ModelsMapper com.ssm.maven.core.service.imp.AlumniBookServiceImp.mm
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'modelsMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'alumniBookServiceImp' to bean named 'modelsMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'txAdvice'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'txAdvice'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'txAdvice' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'transactionManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'transactionManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'transactionManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [insert*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [update*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [upd*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [edit*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [save*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [add*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [new*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [set*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [remove*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [delete*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [del*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [change*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [check*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [get*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [search*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [find*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [load*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'txAdvice'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'txAdvice'
+DEBUG main org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator - Creating implicit proxy for bean 'alumniBookServiceImp' with 0 common interceptors and 2 specific interceptors
+DEBUG main org.springframework.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.ssm.maven.core.service.imp.AlumniBookServiceImp@5d58dda6]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'alumniBookServiceImp'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'modelsServiceImp'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'modelsServiceImp'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [com.ssm.maven.core.service.imp.ModelsServiceImp]: AutowiredFieldElement for private com.ssm.maven.core.mapper.ModelsMapper com.ssm.maven.core.service.imp.ModelsServiceImp.mm
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'modelsServiceImp' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'modelsServiceImp': AutowiredFieldElement for private com.ssm.maven.core.mapper.ModelsMapper com.ssm.maven.core.service.imp.ModelsServiceImp.mm
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'modelsMapper'
+DEBUG main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'modelsServiceImp' to bean named 'modelsMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator - Creating implicit proxy for bean 'modelsServiceImp' with 0 common interceptors and 2 specific interceptors
+DEBUG main org.springframework.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.ssm.maven.core.service.imp.ModelsServiceImp@41511f78]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'modelsServiceImp'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'studentpageifoServiceImp'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'studentpageifoServiceImp'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [com.ssm.maven.core.service.imp.StudentpageifoServiceImp]: AutowiredFieldElement for private com.ssm.maven.core.mapper.StudentpageifoMapper com.ssm.maven.core.service.imp.StudentpageifoServiceImp.spm
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'studentpageifoServiceImp' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'studentpageifoServiceImp': AutowiredFieldElement for private com.ssm.maven.core.mapper.StudentpageifoMapper com.ssm.maven.core.service.imp.StudentpageifoServiceImp.spm
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'studentpageifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'studentpageifoServiceImp' to bean named 'studentpageifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator - Creating implicit proxy for bean 'studentpageifoServiceImp' with 0 common interceptors and 2 specific interceptors
+DEBUG main org.springframework.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.ssm.maven.core.service.imp.StudentpageifoServiceImp@1b0e512e]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'studentpageifoServiceImp'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'teacherpageifoServiceImp'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'teacherpageifoServiceImp'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [com.ssm.maven.core.service.imp.TeacherpageifoServiceImp]: AutowiredFieldElement for private com.ssm.maven.core.mapper.TeacherpageifoMapper com.ssm.maven.core.service.imp.TeacherpageifoServiceImp.tpm
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'teacherpageifoServiceImp' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'teacherpageifoServiceImp': AutowiredFieldElement for private com.ssm.maven.core.mapper.TeacherpageifoMapper com.ssm.maven.core.service.imp.TeacherpageifoServiceImp.tpm
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'teacherpageifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'teacherpageifoServiceImp' to bean named 'teacherpageifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator - Creating implicit proxy for bean 'teacherpageifoServiceImp' with 0 common interceptors and 2 specific interceptors
+DEBUG main org.springframework.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.ssm.maven.core.service.imp.TeacherpageifoServiceImp@571fe5db]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'teacherpageifoServiceImp'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userIfoServiceImp'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'userIfoServiceImp'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [com.ssm.maven.core.service.imp.UserIfoServiceImp]: AutowiredFieldElement for private com.ssm.maven.core.mapper.UserifoMapper com.ssm.maven.core.service.imp.UserIfoServiceImp.uim
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'userIfoServiceImp' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'userIfoServiceImp': AutowiredFieldElement for private com.ssm.maven.core.mapper.UserifoMapper com.ssm.maven.core.service.imp.UserIfoServiceImp.uim
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'userIfoServiceImp' to bean named 'userifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator - Creating implicit proxy for bean 'userIfoServiceImp' with 0 common interceptors and 2 specific interceptors
+DEBUG main org.springframework.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.ssm.maven.core.service.imp.UserIfoServiceImp@73c7b42]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'userIfoServiceImp'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sqlSessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'txAdvice'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'alumniBookifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'modelsMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'studentpageifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'teacherpageifoMapper'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userifoMapper'
+DEBUG main org.springframework.context.support.GenericApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@13c841ca]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sqlSessionFactory'
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+DEBUG main org.springframework.test.context.CacheAwareContextLoaderDelegate - Storing ApplicationContext in cache under key [[MergedContextConfiguration@20b8db77 testClass = StudentpageifoServiceImpTest, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+DEBUG main org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[TestContext@5c23f9fd testClass = StudentpageifoServiceImpTest, testInstance = StudentpageifoServiceImpTest@3df1804d, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@20b8db77 testClass = StudentpageifoServiceImpTest, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+DEBUG main org.springframework.test.context.CacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@20b8db77 testClass = StudentpageifoServiceImpTest, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'StudentpageifoServiceImpTest': AutowiredFieldElement for private com.ssm.maven.core.service.StudentpageifoService StudentpageifoServiceImpTest.sps
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'studentpageifoServiceImp'
+DEBUG main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'StudentpageifoServiceImpTest' to bean named 'studentpageifoServiceImp'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.test.context.CacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@20b8db77 testClass = StudentpageifoServiceImpTest, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+DEBUG main org.springframework.jdbc.datasource.DataSourceTransactionManager - Creating new transaction with name [com.ssm.maven.core.service.imp.StudentpageifoServiceImp.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+DEBUG main org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/project]
+DEBUG main org.springframework.jdbc.datasource.DataSourceTransactionManager - Acquired Connection [com.mysql.jdbc.JDBC4Connection@1adb049e] for JDBC transaction
+DEBUG main org.springframework.jdbc.datasource.DataSourceUtils - Setting JDBC Connection [com.mysql.jdbc.JDBC4Connection@1adb049e] read-only
+DEBUG main org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@1adb049e] to manual commit
+DEBUG main org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG main org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8170cb8]
+DEBUG main org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@1adb049e] will be managed by Spring
+DEBUG main com.ssm.maven.core.mapper.StudentpageifoMapper.selectByExample_COUNT - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1adb049e]
+DEBUG main com.ssm.maven.core.mapper.StudentpageifoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(*) FROM studentpageifo 
+DEBUG main com.ssm.maven.core.mapper.StudentpageifoMapper.selectByExample_COUNT - ==> Parameters: 
+DEBUG main com.ssm.maven.core.mapper.StudentpageifoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1adb049e]
+DEBUG main com.ssm.maven.core.mapper.StudentpageifoMapper.selectByExample - ==>  Preparing: select p_id, p_name, p_nickname, p_picture, p_sex, p_birthday, p_interesting, p_tel, p_email, p_qq, p_weibo, p_address, p_constellation, p_idol, p_luckcolor, p_wishes from studentpageifo limit ?,? 
+DEBUG main com.ssm.maven.core.mapper.StudentpageifoMapper.selectByExample - ==> Parameters: 0(Integer), 1(Integer)
+DEBUG main org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8170cb8]
+DEBUG main org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8170cb8]
+DEBUG main org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8170cb8]
+DEBUG main org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8170cb8]
+DEBUG main org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+DEBUG main org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@1adb049e]
+DEBUG main org.springframework.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [com.mysql.jdbc.JDBC4Connection@1adb049e]
+DEBUG main org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1adb049e] after transaction
+DEBUG main org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG main org.springframework.test.context.support.DirtiesContextTestExecutionListener - After test method: context [[TestContext@5c23f9fd testClass = StudentpageifoServiceImpTest, testInstance = StudentpageifoServiceImpTest@3df1804d, testMethod = test1@StudentpageifoServiceImpTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@20b8db77 testClass = StudentpageifoServiceImpTest, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]], class dirties context [false], class mode [null], method dirties context [false].
+DEBUG main org.springframework.test.context.web.ServletTestExecutionListener - Resetting RequestContextHolder for test context [TestContext@5c23f9fd testClass = StudentpageifoServiceImpTest, testInstance = StudentpageifoServiceImpTest@3df1804d, testMethod = test1@StudentpageifoServiceImpTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@20b8db77 testClass = StudentpageifoServiceImpTest, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+DEBUG main org.springframework.test.context.support.DirtiesContextTestExecutionListener - After test class: context [[TestContext@5c23f9fd testClass = StudentpageifoServiceImpTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@20b8db77 testClass = StudentpageifoServiceImpTest, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]], dirtiesContext [false].
+INFO Thread-1 org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@271816d1: startup date [Mon Sep 18 15:33:26 CST 2017]; root of context hierarchy
+DEBUG Thread-1 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sqlSessionFactory'
+DEBUG Thread-1 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+INFO Thread-1 org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@49d5e6da: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,alumniBookServiceImp,modelsServiceImp,studentpageifoServiceImp,teacherpageifoServiceImp,userIfoServiceImp,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,ServicePointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,alumniBookifoMapper,modelsMapper,studentpageifoMapper,teacherpageifoMapper,userifoMapper]; root of factory hierarchy
+DEBUG Thread-1 org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean 'studentpageifoServiceImp': [StudentpageifoServiceImpTest]
+DEBUG Thread-1 org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean '(inner bean)': [txAdvice]

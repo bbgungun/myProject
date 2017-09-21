@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ssm.maven.core.mapper.ModelsMapper" >
+
+    <resultMap id="BaseResultMap" type="com.ssm.maven.core.domain.Models" >
+        <id column="models_id" property="modelsId" jdbcType="INTEGER" />
+        <result column="indexpage" property="indexpage" jdbcType="VARCHAR" />
+        <result column="teacherpage" property="teacherpage" jdbcType="VARCHAR" />
+        <result column="studentpage" property="studentpage" jdbcType="VARCHAR" />
+        <result column="tailpage" property="tailpage" jdbcType="VARCHAR" />
+        <result column="pictrue" property="pictrue" jdbcType="VARCHAR" />
+        <result column="descrip" property="descrip" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <sql id="Example_Where_Clause" >
+        <where >
+            <foreach collection="oredCriteria" item="criteria" separator="or" >
+                <if test="criteria.valid" >
+                    <trim prefix="(" suffix=")" prefixOverrides="and" >
+                        <foreach collection="criteria.criteria" item="criterion" >
+                            <choose >
+                                <when test="criterion.noValue" >
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue" >
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue" >
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue" >
+                                    and ${criterion.condition}
+                                    <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+
+    <sql id="Update_By_Example_Where_Clause" >
+        <where >
+            <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+                <if test="criteria.valid" >
+                    <trim prefix="(" suffix=")" prefixOverrides="and" >
+                        <foreach collection="criteria.criteria" item="criterion" >
+                            <choose >
+                                <when test="criterion.noValue" >
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue" >
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue" >
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue" >
+                                    and ${criterion.condition}
+                                    <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+
+    <sql id="Base_Column_List" >
+        models_id, indexpage, teacherpage, studentpage, tailpage, pictrue, descrip
+    </sql>
+
+    <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.ssm.maven.core.domain.ModelsExample" >
+        select
+        <if test="distinct" >
+            distinct
+        </if>
+        <include refid="Base_Column_List" />
+        from models
+        <if test="_parameter != null" >
+            <include refid="Example_Where_Clause" />
+        </if>
+        <if test="orderByClause != null" >
+            order by ${orderByClause}
+        </if>
+    </select>
+
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+        select 
+        <include refid="Base_Column_List" />
+        from models
+        where models_id = #{modelsId,jdbcType=INTEGER}
+    </select>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+        delete from models
+        where models_id = #{modelsId,jdbcType=INTEGER}
+    </delete>
+
+    <delete id="deleteByExample" parameterType="com.ssm.maven.core.domain.ModelsExample" >
+        delete from models
+        <if test="_parameter != null" >
+            <include refid="Example_Where_Clause" />
+        </if>
+    </delete>
+
+    <insert id="insert" parameterType="com.ssm.maven.core.domain.Models" >
+        insert into models (models_id, indexpage, teacherpage, 
+            studentpage, tailpage, pictrue, 
+            descrip)
+        values (#{modelsId,jdbcType=INTEGER}, #{indexpage,jdbcType=VARCHAR}, #{teacherpage,jdbcType=VARCHAR}, 
+            #{studentpage,jdbcType=VARCHAR}, #{tailpage,jdbcType=VARCHAR}, #{pictrue,jdbcType=VARCHAR}, 
+            #{descrip,jdbcType=VARCHAR})
+    </insert>
+
+    <insert id="insertSelective" parameterType="com.ssm.maven.core.domain.Models" >
+        insert into models
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="modelsId != null" >
+                models_id,
+            </if>
+            <if test="indexpage != null" >
+                indexpage,
+            </if>
+            <if test="teacherpage != null" >
+                teacherpage,
+            </if>
+            <if test="studentpage != null" >
+                studentpage,
+            </if>
+            <if test="tailpage != null" >
+                tailpage,
+            </if>
+            <if test="pictrue != null" >
+                pictrue,
+            </if>
+            <if test="descrip != null" >
+                descrip,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="modelsId != null" >
+                #{modelsId,jdbcType=INTEGER},
+            </if>
+            <if test="indexpage != null" >
+                #{indexpage,jdbcType=VARCHAR},
+            </if>
+            <if test="teacherpage != null" >
+                #{teacherpage,jdbcType=VARCHAR},
+            </if>
+            <if test="studentpage != null" >
+                #{studentpage,jdbcType=VARCHAR},
+            </if>
+            <if test="tailpage != null" >
+                #{tailpage,jdbcType=VARCHAR},
+            </if>
+            <if test="pictrue != null" >
+                #{pictrue,jdbcType=VARCHAR},
+            </if>
+            <if test="descrip != null" >
+                #{descrip,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="countByExample" parameterType="com.ssm.maven.core.domain.ModelsExample" resultType="java.lang.Integer" >
+        select count(*) from models
+        <if test="_parameter != null" >
+            <include refid="Example_Where_Clause" />
+        </if>
+    </select>
+
+    <update id="updateByExampleSelective" parameterType="map" >
+        update models
+        <set >
+            <if test="record.modelsId != null" >
+                models_id = #{record.modelsId,jdbcType=INTEGER},
+            </if>
+            <if test="record.indexpage != null" >
+                indexpage = #{record.indexpage,jdbcType=VARCHAR},
+            </if>
+            <if test="record.teacherpage != null" >
+                teacherpage = #{record.teacherpage,jdbcType=VARCHAR},
+            </if>
+            <if test="record.studentpage != null" >
+                studentpage = #{record.studentpage,jdbcType=VARCHAR},
+            </if>
+            <if test="record.tailpage != null" >
+                tailpage = #{record.tailpage,jdbcType=VARCHAR},
+            </if>
+            <if test="record.pictrue != null" >
+                pictrue = #{record.pictrue,jdbcType=VARCHAR},
+            </if>
+            <if test="record.descrip != null" >
+                descrip = #{record.descrip,jdbcType=VARCHAR},
+            </if>
+        </set>
+        <if test="_parameter != null" >
+            <include refid="Update_By_Example_Where_Clause" />
+        </if>
+    </update>
+
+    <update id="updateByExample" parameterType="map" >
+        update models
+        set models_id = #{record.modelsId,jdbcType=INTEGER},
+            indexpage = #{record.indexpage,jdbcType=VARCHAR},
+            teacherpage = #{record.teacherpage,jdbcType=VARCHAR},
+            studentpage = #{record.studentpage,jdbcType=VARCHAR},
+            tailpage = #{record.tailpage,jdbcType=VARCHAR},
+            pictrue = #{record.pictrue,jdbcType=VARCHAR},
+            descrip = #{record.descrip,jdbcType=VARCHAR}
+        <if test="_parameter != null" >
+            <include refid="Update_By_Example_Where_Clause" />
+        </if>
+    </update>
+
+    <update id="updateByPrimaryKeySelective" parameterType="com.ssm.maven.core.domain.Models" >
+        update models
+        <set >
+            <if test="indexpage != null" >
+                indexpage = #{indexpage,jdbcType=VARCHAR},
+            </if>
+            <if test="teacherpage != null" >
+                teacherpage = #{teacherpage,jdbcType=VARCHAR},
+            </if>
+            <if test="studentpage != null" >
+                studentpage = #{studentpage,jdbcType=VARCHAR},
+            </if>
+            <if test="tailpage != null" >
+                tailpage = #{tailpage,jdbcType=VARCHAR},
+            </if>
+            <if test="pictrue != null" >
+                pictrue = #{pictrue,jdbcType=VARCHAR},
+            </if>
+            <if test="descrip != null" >
+                descrip = #{descrip,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where models_id = #{modelsId,jdbcType=INTEGER}
+    </update>
+
+    <update id="updateByPrimaryKey" parameterType="com.ssm.maven.core.domain.Models" >
+        update models
+        set indexpage = #{indexpage,jdbcType=VARCHAR},
+            teacherpage = #{teacherpage,jdbcType=VARCHAR},
+            studentpage = #{studentpage,jdbcType=VARCHAR},
+            tailpage = #{tailpage,jdbcType=VARCHAR},
+            pictrue = #{pictrue,jdbcType=VARCHAR},
+            descrip = #{descrip,jdbcType=VARCHAR}
+        where models_id = #{modelsId,jdbcType=INTEGER}
+    </update>
+    <select id="selectByAbId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    	SELECT
+		models.models_id,
+		models.indexpage,
+		models.teacherpage,
+		models.studentpage,
+		models.tailpage,
+		models.pictrue,
+		models.descrip
+		FROM
+		models JOIN models_aluminbook s
+		WHERE
+		s.ab_id=#{ab_id} and s.models_id=models.models_id 
+    </select>
+</mapper>
